@@ -1,4 +1,4 @@
-module github.com/thoj/go-ircevent
+module github.com/v0l/go-ircevent
 
 go 1.12
 
