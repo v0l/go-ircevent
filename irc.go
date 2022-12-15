@@ -478,6 +478,9 @@ func (irc *Connection) Connect(server string) error {
 	irc.stopped = false
 	irc.Log.Printf("Connected to %s (%s)\n", irc.Server, irc.socket.RemoteAddr())
 
+		
+	time.Sleep(1 * time.Second)
+
 	irc.pwrite = make(chan string, 10)
 	irc.Error = make(chan error, 10)
 	irc.Add(3)
